@@ -1,4 +1,4 @@
-package List.Ordenacao;
+package List.Pesquisa;
 
 public class Livro {
     private String title;
@@ -26,9 +26,9 @@ public class Livro {
     @Override
     public String toString() {
         return "Livro{" +
-                "title='" + title + '\'' +
-                ", autor='" + autor + '\'' +
-                ", anoPublicacao=" + anoPublicacao +
+                "Título: '" + title + '\'' +
+                ", Autor: '" + autor + '\'' +
+                ", Ano de publicação: " + anoPublicacao +
                 '}';
     }
 }
