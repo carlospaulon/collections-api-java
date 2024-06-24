@@ -54,7 +54,7 @@ public class OrdenacaoNumeros {
         ordenacaoNumeros.adicionarNumero(99);
         ordenacaoNumeros.adicionarNumero(154);
         ordenacaoNumeros.adicionarNumero(0);
-        
+
         //lista sem ordenação - ordem de adição
         ordenacaoNumeros.exibirNumeros();
 
