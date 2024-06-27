@@ -52,12 +52,12 @@ public class ConjuntoPalavrasUnicas {
 
         //verificando se um determinado item está no conjunto
         System.out.println("Uma 'caneta' está no conjunto? " + conjuntoPalavrasUnicas.verificarPalavra("Caneta"));
-        System.out.println("Um 'estojo' está no conjunto? " +conjuntoPalavrasUnicas.verificarPalavra("Estojo") + "\n");
+        System.out.println("Um 'estojo' está no conjunto? " + conjuntoPalavrasUnicas.verificarPalavra("Estojo") + "\n");
 
         //removendo um item do conjunto
         conjuntoPalavrasUnicas.removerPalavra("Caneta");
         conjuntoPalavrasUnicas.exibirPalavrasUnicas();
-        System.out.println("Uma 'caneta' está no conjunto? " +conjuntoPalavrasUnicas.verificarPalavra("Caneta"));
+        System.out.println("Uma 'caneta' está no conjunto? " + conjuntoPalavrasUnicas.verificarPalavra("Caneta"));
 
         //removendo um item inexistente
         conjuntoPalavrasUnicas.removerPalavra("Livro");
