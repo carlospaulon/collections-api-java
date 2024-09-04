@@ -18,7 +18,7 @@ public class AgendaContatos {
         if (!agendaContatoMap.isEmpty()) {
             agendaContatoMap.remove(nome);
         } else {
-            System.out.println("A agenda de contatos está vazia!");
+            System.out.println("Contato não encontrado!");
         }
     }
 
@@ -36,12 +36,11 @@ public class AgendaContatos {
             contatoPorNome = agendaContatoMap.get(nome);
             if (contatoPorNome == null) {
                 System.out.println("Contato não encontrado!");
-            } else {
-
             }
         } else {
-            throw new RuntimeException("Agenda de contatos está vazia!");
+            System.out.println("A agenda de contatos está vazia!");
         }
+
         return contatoPorNome;
     }
 
@@ -59,13 +58,14 @@ public class AgendaContatos {
         agendaContatos.adicionarContato("Maria", 111111);
         agendaContatos.adicionarContato("Max", 885);
         agendaContatos.adicionarContato("Max I", 9112);
-
+//
         agendaContatos.exibirContatos();
         //removendo contato
         agendaContatos.removerContato("Max");
         agendaContatos.removerContato("Max II");
         System.out.println();
-
+        agendaContatos.exibirContatos();
+//
         //pesquisando por nome
         System.out.println("O número de Maria é: " + agendaContatos.pesquisarPorNome("Maria"));
         System.out.println("O número de Carlos é: " + agendaContatos.pesquisarPorNome("Carlos"));
