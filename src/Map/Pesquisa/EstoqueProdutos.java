@@ -18,7 +18,7 @@ public class EstoqueProdutos {
         if (!estoqueProdutosMap.isEmpty()) {
             System.out.println(estoqueProdutosMap);
         } else {
-            System.out.println("O Map está vazio!");
+            System.out.println("Não há produtos no estoque!");
         }
     }
 
@@ -31,7 +31,7 @@ public class EstoqueProdutos {
                 System.out.println("Produto não encontrado!");
             }
         } else {
-            System.out.println("O Map está vazio!");
+            System.out.println("Não há produtos no estoque!");
         }
     }
 
@@ -42,7 +42,7 @@ public class EstoqueProdutos {
                 valorTotalEstoque += p.getPreco() * p.getQuantidade();
             }
         } else {
-            throw new RuntimeException("O Map está vazio!");
+            throw new RuntimeException("Não há produtos no estoque!");
         }
 
         return valorTotalEstoque;
@@ -60,7 +60,7 @@ public class EstoqueProdutos {
                 }
             }
         } else {
-            throw new RuntimeException("O Map está vazio!");
+            throw new RuntimeException("Não há produtos no estoque!");
         }
 
         return produtoMaisCaro;
@@ -77,6 +77,8 @@ public class EstoqueProdutos {
                     produtoMaisBarato = p;
                 }
             }
+        } else {
+            throw new RuntimeException("Não há produtos no estoque!");
         }
 
         return produtoMaisBarato;
@@ -96,7 +98,7 @@ public class EstoqueProdutos {
                 }
             }
         } else {
-            throw new RuntimeException("O Map está vazio!");
+            throw new RuntimeException("Não há produtos no estoque!");
         }
 
         return produtoMaiorQuantidadeValor;
